@@ -4,6 +4,9 @@
     <Compile Update="AdminMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="HttpMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="HttpServer\ImageForm.cs">
       <SubType>Form</SubType>
     </Compile>

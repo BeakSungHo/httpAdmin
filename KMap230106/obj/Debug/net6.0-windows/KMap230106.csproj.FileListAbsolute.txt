@@ -38,3 +38,10 @@ C:\Users\user\Desktop\KMap230106\KMap230106\obj\Debug\net6.0-windows\ref\KMap230
 C:\Users\user\Desktop\KMap230106\KMap230106\obj\Debug\net6.0-windows\KMap230106.AdminMainForm.resources
 C:\Users\user\Desktop\KMap230106\KMap230106\obj\Debug\net6.0-windows\KMap230106.Properties.Resources.resources
 C:\Users\user\Desktop\KMap230106\KMap230106\obj\Debug\net6.0-windows\KMap230106.HttpServer.ImageForm.resources
+C:\Users\user\Desktop\KMap230106\KMap230106\bin\Debug\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\user\Desktop\KMap230106\KMap230106\bin\Debug\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\user\Desktop\KMap230106\KMap230106\bin\Debug\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\user\Desktop\KMap230106\KMap230106\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Core.dll
+C:\Users\user\Desktop\KMap230106\KMap230106\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\user\Desktop\KMap230106\KMap230106\bin\Debug\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\user\Desktop\KMap230106\KMap230106\obj\Debug\net6.0-windows\KMap230106.HttpMapForm.resources

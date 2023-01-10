@@ -11,6 +11,7 @@ using System.Xml.Linq;
 using KMap230106.HttpServer;
 using System.Data;
 using System;
+using System.IO.MemoryMappedFiles;
 
 namespace KMap230106
 {
@@ -19,6 +20,7 @@ namespace KMap230106
     {
 
         private ImageForm ImgForm = new ImageForm();
+        private HttpMapForm mapForm = new HttpMapForm();
         private List<MapData> datas = new List<MapData>();
         public Httpwebrequest httprequest = new Httpwebrequest();
 
@@ -174,6 +176,9 @@ namespace KMap230106
                     tb_longtitude.Text = datas[index].longtitude.ToString();
                     Btn_on();   //버튼 활성화 업데이트와 삭제기능
                     ImgForm.ImageLord(tb_imgname.Text = datas[index].imgName.ToString());
+                    mapForm.mapChaging(Double.Parse( datas[index].latitude),Double.Parse( datas[index].longtitude));
+                    mapForm.Focus();
+                    ImgForm.Focus();
                 }
 
 
@@ -195,6 +200,12 @@ namespace KMap230106
             ImgForm.Location = new Point(120,10);
             ImgForm.Show();
             ImgForm.Focus();
+
+            mapForm.StartPosition=FormStartPosition.Manual;
+            mapForm.Location = new Point(240, 10);
+            mapForm.Show();
+            mapForm.Focus();
+
         }
     }
 }
