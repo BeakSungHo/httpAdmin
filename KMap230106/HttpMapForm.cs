@@ -16,10 +16,9 @@ namespace KMap230106
         {
             InitializeComponent();
         }
-
         private void HttpMapForm_Load(object sender, EventArgs e)
         {
-            webView21.Source = new Uri("https://www.google.co.kr/maps/place/36.33713860852753+127.4469326270927 ");
+            webView21.Source = new Uri("https://www.google.co.kr/maps");
         }
         public void mapChaging(double latitude,double longtitude)
         {

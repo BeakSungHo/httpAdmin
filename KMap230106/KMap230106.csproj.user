@@ -7,7 +7,7 @@
     <Compile Update="HttpMapForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="HttpServer\ImageForm.cs">
+    <Compile Update="ImageForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
