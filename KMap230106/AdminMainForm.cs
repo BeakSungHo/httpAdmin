@@ -63,6 +63,7 @@ namespace KMap230106
 
                 }
                 LV_MarkData.Sorting = SortOrder.Ascending;
+                MapDatas.Sort((idA, idB) => idA.id.CompareTo(idB.id));
             }
         }
         
@@ -82,6 +83,7 @@ namespace KMap230106
                     LV_MarkData.Items.Add(item);
                 }
                 LV_MarkData.Sorting = SortOrder.Ascending;
+                MainDatas.Sort((idA, idB) => idA.id.CompareTo(idB.id));
             }
         }
 
@@ -104,6 +106,7 @@ namespace KMap230106
 
                 }
                 LV_MarkData.Sorting = SortOrder.Ascending;
+                SubDatas.Sort((idA, idB) => idA.id.CompareTo(idB.id));
             }
           
         }
@@ -557,9 +560,27 @@ namespace KMap230106
         private void LV_MarkData_ColumnClick(object sender, ColumnClickEventArgs e)
         {
             if (LV_MarkData.Sorting == SortOrder.Ascending)
+            {
                 LV_MarkData.Sorting = SortOrder.Descending;
+                MainDatas.Sort((idA, idB) => idB.id.CompareTo(idA.id));
+                MapDatas.Sort((idA, idB) => idB.id.CompareTo(idA.id));
+                SubDatas.Sort((idA, idB) => idB.id.CompareTo(idA.id));
+
+
+
+            }
             else
+            {
                 LV_MarkData.Sorting = SortOrder.Ascending;
+                MainDatas.Sort((idA, idB) => idA.id.CompareTo(idB.id));
+                MapDatas.Sort((idA, idB) => idA.id.CompareTo(idB.id));
+                SubDatas.Sort((idA, idB) => idA.id.CompareTo(idB.id));
+
+
+            }
+            /*            MapDatas.Sort();//오름차
+                        MapDatas.Sort(new Comparison<MapData>((n1, n2) => n2.id));//내림자
+            */
         }
     }
 }

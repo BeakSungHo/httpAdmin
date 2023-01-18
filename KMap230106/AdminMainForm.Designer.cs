@@ -543,6 +543,7 @@
             this.btn_sub_delete.TabIndex = 54;
             this.btn_sub_delete.Text = "Delete";
             this.btn_sub_delete.UseVisualStyleBackColor = true;
+            this.btn_sub_delete.Visible = false;
             this.btn_sub_delete.Click += new System.EventHandler(this.btn_sub_delete_Click);
             // 
             // pb_sub_imgurl
@@ -678,6 +679,7 @@
             // 
             // tb_sub_id
             // 
+            this.tb_sub_id.Enabled = false;
             this.tb_sub_id.Location = new System.Drawing.Point(145, 16);
             this.tb_sub_id.Name = "tb_sub_id";
             this.tb_sub_id.Size = new System.Drawing.Size(206, 27);
