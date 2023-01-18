@@ -148,7 +148,7 @@ namespace KMap230106
 
             tb_sub_id.Text = "";
             tb_sub_title.Text = "";
-            tb_sub_devription.Text = "";
+            tb_sub_description.Text = "";
             tb_sub_img.Text = "";
             tb_sub_imgurl.Text = "";
 
@@ -175,7 +175,7 @@ namespace KMap230106
                 if (tb_sub_id.Text == "")
                 {
                     string title = tb_sub_title.Text;
-                    string description = tb_sub_devription.Text;
+                    string description = tb_sub_description.Text;
                     string img = tb_sub_img.Text;
                     string imgurl = tb_sub_imgurl.Text;
                     tb_result.Text = await Sub_httprequest.CreateMarkerPost(title, description, img, imgurl);
@@ -188,7 +188,7 @@ namespace KMap230106
                 {
                     int id =int.Parse( tb_sub_id.Text);
                     string title = tb_sub_title.Text;
-                    string description = tb_sub_devription.Text;
+                    string description = tb_sub_description.Text;
                     string img = tb_sub_img.Text;
                     string imgurl = tb_sub_imgurl.Text;
                     tb_result.Text = await Sub_httprequest.UpdateDataPost(id, title, description, img, imgurl);
@@ -410,7 +410,7 @@ namespace KMap230106
                         int index = LV_MarkData.FocusedItem.Index;
                         tb_sub_id.Text = SubDatas[index].id.ToString();
                         tb_sub_title.Text = SubDatas[index].title.ToString();
-                        tb_sub_devription.Text = SubDatas[index].description.ToString();
+                        tb_sub_description.Text = SubDatas[index].description.ToString();
                         tb_sub_img.Text = SubDatas[index].img.ToString();
                         tb_sub_imgurl.Text = SubDatas[index].imgurl.ToString();
                         Btn_on();   //버튼 활성화 업데이트와 삭제기능
@@ -430,8 +430,7 @@ namespace KMap230106
             }
             catch (Exception ex)
             {
-                MessageBox.Show("이미지가 올바르지 않습니다.");
-                tb_tureFalse.Text = String.Format("실패 {0}", ex.ToString());
+                //요소바꿀시 호출에러 발생함으로 참고 
             }
 
         }

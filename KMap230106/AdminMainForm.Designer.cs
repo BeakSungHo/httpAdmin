@@ -80,7 +80,7 @@
             this.tb_sub_img = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.tb_sub_devription = new System.Windows.Forms.TextBox();
+            this.tb_sub_description = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.tb_sub_title = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
@@ -631,7 +631,7 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.White;
-            this.groupBox6.Controls.Add(this.tb_sub_devription);
+            this.groupBox6.Controls.Add(this.tb_sub_description);
             this.groupBox6.Controls.Add(this.label17);
             this.groupBox6.Controls.Add(this.tb_sub_title);
             this.groupBox6.Controls.Add(this.label18);
@@ -643,13 +643,13 @@
             this.groupBox6.TabIndex = 46;
             this.groupBox6.TabStop = false;
             // 
-            // tb_sub_devription
+            // tb_sub_description
             // 
-            this.tb_sub_devription.Location = new System.Drawing.Point(145, 82);
-            this.tb_sub_devription.Multiline = true;
-            this.tb_sub_devription.Name = "tb_sub_devription";
-            this.tb_sub_devription.Size = new System.Drawing.Size(420, 83);
-            this.tb_sub_devription.TabIndex = 1;
+            this.tb_sub_description.Location = new System.Drawing.Point(145, 82);
+            this.tb_sub_description.Multiline = true;
+            this.tb_sub_description.Name = "tb_sub_description";
+            this.tb_sub_description.Size = new System.Drawing.Size(420, 83);
+            this.tb_sub_description.TabIndex = 1;
             // 
             // label17
             // 
@@ -828,7 +828,7 @@
         private TextBox tb_sub_img;
         private Label label7;
         private GroupBox groupBox6;
-        private TextBox tb_sub_devription;
+        private TextBox tb_sub_description;
         private Label label17;
         private TextBox tb_sub_title;
         private Label label18;
